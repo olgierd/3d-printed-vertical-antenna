@@ -26,7 +26,7 @@ cylinder(d=pipe_d-2*thick,h=h+2*e);
 
 for( i = [0:every:turns*360] ) {
 
-    rotate([0,0,i])
+    rotate([0,0,i+every/2])
     translate([pipe_d/2,0,pitch*i/360+start])
     rotate([0,90,0])
     cube([step_hei,step_wid,step_ext*2], center=true);   
